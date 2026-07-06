@@ -3,27 +3,22 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { Image } from 'astro:assets';
+import pfp from 'IMG.png';
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-				}
-		</style>
+
 	</head>
 	<body>
 		<Header />
 		<main>
 			<h1>🤓 Hello!</h1>
 			<p>
-			<img src="https://github.com/adamochwat/portfolio-1/blob/main/src/pages/IMG.png" alt="Portrait"> 
+			<img src={pfp} alt="Portrait"> 
 			</p>
 			<p>
 				I am a <b>social researcher</b> based in Warsaw, Poland 🇵🇱. My interests lay at the intersection of historical sociology, economic history and higher education studies. I am currently in my final year of MA in sociology at the University of Warsaw.
