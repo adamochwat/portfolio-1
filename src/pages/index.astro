@@ -9,11 +9,23 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<link rel="icon" type="image/png" href="/favicon.png" />	</head>
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<style>
+			img {
+				display: block;
+				margin: 0 auto;
+				border-radius: 12px;
+				box-shadow: var(--box-shadow);
+				}
+		</style>
+	</head>
 	<body>
 		<Header />
 		<main>
 			<h1>🤓 Hello!</h1>
+			<p>
+			<img src="/pfp.jpg"> 
+			</p>
 			<p>
 				I am a social researcher based in Warsaw, Poland. My interests lay at the intersection of historical sociology, economic history and higher education studies. I am currently in my final year of MA in sociology at the University of Warsaw.
 			</p>
