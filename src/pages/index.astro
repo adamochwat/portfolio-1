@@ -4,7 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { Image } from 'astro:assets';
-import pfp from 'IMG.png';
+import IMG from '/IMG.png';
 ---
 
 <!doctype html>
@@ -18,7 +18,7 @@ import pfp from 'IMG.png';
 		<main>
 			<h1>🤓 Hello!</h1>
 			<p>
-			<Image src={pfp} alt="Portrait"/> 
+			<Image src={IMG} alt="Portrait"/> 
 			</p>
 			<p>
 				My name is Adam Ochwat and I am a <b>social researcher</b> based in Warsaw, Poland 🇵🇱. My interests lie at the intersection of historical sociology, economic history and higher education studies. I am currently in my final year of MA in sociology at the University of Warsaw.
