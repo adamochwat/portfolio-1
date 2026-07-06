@@ -3,7 +3,6 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import { Image } from 'astro:assets';
 ---
 
 <!doctype html>
@@ -16,9 +15,6 @@ import { Image } from 'astro:assets';
 		<Header />
 		<main>
 			<h1>🤓 Hello!</h1>
-			<p>
-			<Image src={IMG.png} alt="Portrait"/> 
-			</p>
 			<p>
 				My name is Adam Ochwat and I am a <b>social researcher</b> based in Warsaw, Poland 🇵🇱. My interests lie at the intersection of historical sociology, economic history and higher education studies. I am currently in my final year of MA in sociology at the University of Warsaw.
 			</p>
